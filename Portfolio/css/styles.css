@@ -44,7 +44,7 @@ header{
 nav{
     display: flex;
     width: 100vw;
-    gap: 5em;
+    gap: 3em;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;  
@@ -58,8 +58,12 @@ nav{
 nav > a {
     margin-left: 10%;
 }
-nav > ul {
+nav ul {
     margin-right: 10%;
+    display: flex;
+    /* gap: 1em; */
+    align-items: center;
+    justify-content: center;
 }
 nav ul li {
     display: inline-block;
@@ -87,6 +91,21 @@ nav ul li a::after {
 nav ul li a:hover::after{
     width: 100%;
 }
+
+.nav-socials a{
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-right: 5px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.nav-socials a:hover{
+    color: #ff004f;
+    transform: translateY(-5px)
+}
+
 
 /* Logo */
 .logo {
