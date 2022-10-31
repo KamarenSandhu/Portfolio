@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -22,10 +23,12 @@ body {
 header{
     width: 100%;
     height: 100vh;
+
     background-image: url(/images/kampop.png);
     background-size: 50% cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position-x: 90%;
     background-position-y: 5em;
 }
@@ -78,7 +81,7 @@ nav ul li a::after {
     position: absolute;
     left: 0;
     bottom: -6px;
-    transition: 0.5s
+    transition: .5s
 }
 
 nav ul li a:hover::after{
@@ -151,33 +154,44 @@ a.logo span{
     border-radius: 10px;
     display: block;
     object-fit: cover;
-    object-position: center;
+    object-position: center; 
+    transition: .5s;  
+}
+
+.work:hover img {
+    transform: scale(1.1);
 }
 
 .layer{
     width: 100%;
     height: 100%;
+    opacity: 0;
     background: linear-gradient(rgb(0,0,0,0.6), #ff004f);
     border-radius: 10px;
     position: absolute;
     left:0;
     bottom: 0;
     overflow: hidden;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    opacity: 0;
+    
 }
-.layer:hover
-{
-    opacity: 100;
+.layer:hover{
+    opacity: 100%;
     transition: .5s;
 }
 
 .layer a{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
     text-decoration: none;
-    color: white
+    color: white;
+    height: 0;
+    transition: height .5s;
+}
+
+.layer:hover a{
+    height: 100%;
 }
 
 .tab-links2{
@@ -225,6 +239,7 @@ a.logo span{
 }
 
 .sub-title {
+    margin-top: 1em;
     font-size: 2em; 
     font-weight: bold
 }
@@ -232,7 +247,13 @@ a.logo span{
 .tab-titles{
     display: flex;
     margin: 2em 0;
-    justify-content:left
+    justify-content:left;
+}
+
+.tab-links a {
+    text-decoration: none;
+    color: #b54769;
+    font-size: .8rem;
 }
 
 .tab-links{
@@ -339,12 +360,12 @@ a.logo span{
     font-weight: 300;
     border-radius: 10px;
     text-align: center;
+    transition: .5s; 
 }
 
 .services-list div i{
     font-size: 3em;
-    margin-bottom: 30px;
-    transition: background 10s, transform 3s;
+    margin-bottom: 30px;  
 }
 
 .services-list div h2{
@@ -364,6 +385,104 @@ a.logo span{
 .services-list div:hover{
     background-color: #ff004f;
     transform: translateY(-10px);
+    transition: background .5s, transform .5s;
 }
 
- 
+/* End services section */
+
+/* Contact Section */
+
+.row{
+    display: flex;
+    gap: 5%
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+    font-size: .9em;
+} 
+
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px)
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 8px 0;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.btn{
+    display: inline-block;
+    margin: 50px auto;
+    width: 100%;
+    border: 1px solid #ff004f;
+    background-color: #080808;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .5s
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    background-color: #ff004f;
+}
+
+form .btn{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer; 
+}
+
+.copyright{
+    text-align: center;
+    font-size: .8em;
+    color: #ababab;
+}
+
+.copyright i{
+    color: #ff004f;
+}

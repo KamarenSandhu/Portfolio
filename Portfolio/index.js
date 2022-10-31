@@ -1,5 +1,7 @@
-var tabLinks = document.getElementsByClassName("tab-links");
-var tabContents = document.getElementsByClassName("tab-contents");
+const tabLinks = document.getElementsByClassName("tab-links");
+const tabContents = document.getElementsByClassName("tab-contents");
+const tabLinks2 = document.getElementsByClassName("tab-links2");
+const tabContents2 = document.getElementsByClassName("tab-contents2");
 
 function opentab(tabname){
     for(i of tabLinks){
@@ -14,9 +16,6 @@ function opentab(tabname){
     document.getElementById(tabname).classList.add("active-tab")
 }
 
-var tabLinks2 = document.getElementsByClassName("tab-links2");
-var tabContents2 = document.getElementsByClassName("tab-contents2");
-
 function opentab2(tabname){
     for(i of tabLinks2){
         i.classList.remove("active-link");
@@ -29,4 +28,10 @@ function opentab2(tabname){
     event.currentTarget.classList.add('active-link');
     document.getElementById(tabname).classList.add("active-tab")
 }
+
+// const activeLink = document.getElementsByClassName("active-link");
+
+// activeLink.forEach(activeLinks => activeLinks.addEventListener('click', (e)=>{
+
+// }))
 
