@@ -14,24 +14,30 @@
         <div class="container">
             <nav>
                 <a href="#" class="logo"> <span>K</span>amaren<span>S</span>andhu.</a>
-                <ul>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li> 
-                    <div class="nav-socials">
-                        <a href="https://linkedin.com/in/kamaren-sandhu" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/KamarenSandhu" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    </div>   
+                <ul id="sideMenu">
+                    <div class="link-mobile">
+                        <li><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
+                        <li><a href="#resume" onclick="closeMenu()">Resume</a></li>
+                        <li><a href="#services" onclick="closeMenu()">Services</a></li>
+                        <li><a href="#contact" onclick="closeMenu()">Contact</a></li> 
+                        <div class="nav-socials">
+                            <a href="https://linkedin.com/in/kamaren-sandhu" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/KamarenSandhu" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </div> 
+                        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                    </div>
+                     
                 </ul>
-                
+
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+                 
                 
             </nav>       
             <div class="header-text">
-                <p>Front End Developer, UI/UX Designer</p>
+                <p class="headerp1">Front End Developer, UI/UX Designer</p>
                 <br>
                 <h3>Hi 👋 , my name is <span>Kam</span> and I design and develop experiences that make people’s lives <strong>simple.</strong></h3>
-                <p class="">View my projects below 👇</p>
+                <p class="headerp2">View my projects below 👇</p>
             </div>
         </div> 
     </header>
@@ -165,7 +171,7 @@
     <div class="container">
         <a id="services" class="anchor"></a>
             <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
+            <div class="services-list mobile-grid">
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Front End Web Development</h2>
