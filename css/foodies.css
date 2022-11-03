@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+html{
+    scroll-behavior: smooth ;
+}
+body {
+    background-color: #080808;
+    color: white;
+}
+.container {
+    padding: 1.6em 10%;
+    position: relative;
+}
+
+/* nav */
+
+nav{
+    display: flex;
+    width: 100vw;
+    gap: 3em;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;  
+    position: fixed;
+    z-index: 10;
+    top:0;
+    left: 0;
+    padding-top: 2em;
+    background-color: #080808;
+}
+nav > a {
+    margin-left: 10%;
+}
+header{
+    height: 60vh;
+    background-image: url(/Foodies-Case-Study/Banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+/* Logo */
+.logo {
+    font-size: 2em;
+    color: white;
+    text-decoration: none;
+}
+
+a.logo span{
+    color: #ff004f
+}

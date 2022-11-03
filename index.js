@@ -32,7 +32,7 @@ function opentab2(tabname){
 }
 
 function openMenu(){
-    sideMenu.style.right = "-25%";
+    sideMenu.style.right = "-20%";
 }
 function closeMenu(){
     sideMenu.style.right = "-90%";
