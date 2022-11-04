@@ -4,14 +4,6 @@ const tabLinks2 = document.getElementsByClassName("tab-links2");
 const tabContents2 = document.getElementsByClassName("tab-contents2");
 const sideMenu = document.getElementById('sideMenu');
 
-// const navBar = document.body.nav;
-
-// navBar.addEventListner('scroll', function(){
-//     alert('scroll in progress')
-//     navBar.style.backgroundColor = "#080808";
-// });
-
-
 function opentab(tabname){
     for(i of tabLinks){
         i.classList.remove("active-link");
