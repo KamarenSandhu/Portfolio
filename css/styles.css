@@ -558,6 +558,15 @@ form .btn{
     
 }
 
+.footer-icons{
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-icons a{
+    font-size: 1.5em;
+}
+
 
 
 
