@@ -654,8 +654,9 @@ nav .fa-solid{
         position: relative;
     }
     header{
+        background-image: url(../images/kampop.png);
         background-position-y: 25%;
-        height: 100vh;
+        height: 100%;
     }
     .logo {
             font-size: 1.6em;
