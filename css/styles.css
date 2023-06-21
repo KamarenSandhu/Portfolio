@@ -324,11 +324,12 @@ a.logo span{
 }
 .tab-contents ul li span.in-progress{
     color: #b54769;
-    font-size: .8em;
+    font-size: 1em;
 }
 
 .tab-contents ul li span.in-progress span{
     color: white;
+    font-size: 1em;
 }
 
 .tab-contents ul li {
